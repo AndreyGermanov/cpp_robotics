@@ -21,7 +21,7 @@ int main()
     // Использование сеттеров
     car1->setCylinders(20);
     car1->setPower(300);
-    car1->setBrand("Land Rower");
+    car1->setBrand("Land Rover");
 
     // Использование геттеров
     std::cout << "Использование геттеров и сеттеров: "
