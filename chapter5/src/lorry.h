@@ -3,7 +3,7 @@
 #include "car.h"
 
 namespace cars {
-
+    // Класс грузовиков, унаследованный от класса машин
     class Lorry: public Car
     {
     private:
@@ -38,8 +38,12 @@ namespace cars {
         std::string getClassName() const override;
     };
 
+    // Оператор вывода если объект передан по ссылке
     std::ostream& operator<< (std::ostream &out, const Lorry &lorry);
+    // Оператор вывода если передан указатель на объект
     std::ostream& operator<< (std::ostream &out, const Lorry *lorry);
+    // Оператор ввода если объект передан по ссылке
     std::istream& operator>> (std::istream &in, Lorry &lorry);
+    // Оператор ввода если передан указатель на объект
     std::istream& operator>> (std::istream &in, Lorry *lorry);
 }

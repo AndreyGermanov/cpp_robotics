@@ -4,7 +4,7 @@
 
 // Пространство имен
 namespace cars {
-
+    // Класс машин
     class Car
     {
     private:
@@ -45,13 +45,13 @@ namespace cars {
         // Метод возвращает общее количество созданных объектов
         friend int count();
     protected:
-        // Метод, который читает объект и потока ввода
+        // Читает объект и потока ввода
         void read(std::istream &in);
-        // Метод, который пишет объект в поток вывода
+        // Пишет объект в поток вывода
         void write(std::ostream &out) const;
-        // Метод, который пишет поля объекта в поток вывода
+        // Пишет поля объекта в поток вывода
         virtual void write_params(std::ostream &out) const;
-        // Метод возвращает название текущего класса
+        // Возвращает название текущего класса
         virtual std::string getClassName() const;
     };
 
