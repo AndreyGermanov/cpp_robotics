@@ -63,6 +63,6 @@ namespace cars {
     std::istream& operator>> (std::istream &in, Car &car);
     // Оператор ввода если передан указатель на объект
     std::istream& operator>> (std::istream &in, Car *car);
-    // Метод возвращает общее количество созданных объектов
+    // Возвращает общее количество созданных объектов
     int count();
 }
