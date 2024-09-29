@@ -116,10 +116,10 @@ int main()
     // Вывод количества объектов
     std::cout << "Общее количество объектов (должно быть 6): " << count() << std::endl;
 
+    // Удаление всех объектов
     delete car2; car2 = nullptr;
     delete car3; car3 = nullptr;
     delete car4; car4 = nullptr;
-
     delete lorry2; lorry2 = nullptr;
     delete lorry3; lorry3 = nullptr;
     delete lorry4; lorry4 = nullptr;
