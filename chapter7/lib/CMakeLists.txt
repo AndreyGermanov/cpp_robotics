@@ -35,7 +35,7 @@ target_include_directories(shared_matrix_lib
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
 )
 
-# Параметры заголовочного файла эксорта
+# Параметры заголовочного файла экспорта
 generate_export_header(                                         
     shared_matrix_lib
     EXPORT_FILE_NAME "${PROJECT_BINARY_DIR}/export_shared.h"
