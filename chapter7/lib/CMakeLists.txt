@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)            # требуемая версия cmake
 project(                                        
-matrixlib                                       # название проекта
+    matrixlib                                       # название проекта
     VERSION 1.0                                 # номер версии проекта
     DESCRIPTION "Matrix lib"                    # описание
     LANGUAGES CXX                               # язык программирования
