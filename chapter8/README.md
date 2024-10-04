@@ -1,6 +1,6 @@
 # Игра "Змейка"
 
-![Demo](/img/demo.gif)
+![Demo](img/demo.gif)
 
 ## Особенности запуска
 
