@@ -29,7 +29,7 @@ Window::Window(QWidget *parent) : QWidget(parent)
     // и привязываем обработчик таймера "on_timeout"
     // в нем происходит основной цикл игры: перемещение змеи,
     // проверка коллизий и перерисовка поля
-    connect(timer, SIGNAL(timeout()), this, SLOT(on_timeout()));
+    connect(timer, SIGNAL(timeout()), this, SLOT(timerEvent()));
     // Загрузка изображений
     this->loadImages();
     // Старт игры
@@ -123,7 +123,7 @@ void Window::move(int key) {
 }
 
 /// @brief Обработчик таймера, запускается периодически
-void Window::on_timeout()
+void Window::timerEvent()
 {   
     // Перемещаем змею в зависимости от текущего направления
     // движения (direction)
@@ -156,7 +156,7 @@ void Window::on_timeout()
     // перерисовываем окно
     this->repaint();
     // проверяем коллизии
-    this->checkCollisions();
+    this->checkCollision();
 }
 
 /// @brief Отображает яблоко на поле
@@ -234,7 +234,7 @@ void Window::paintEvent(QPaintEvent *e) {
 }
 
 /// @brief Проверяет столкновения змеи
-void Window::checkCollisions()
+void Window::checkCollision()
 {
     // столкновение с границами окна и со своим телом
     auto [x,y] = this->snakePos[0];

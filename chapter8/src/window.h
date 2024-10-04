@@ -37,7 +37,7 @@ private:
     // Метод загрузки изображений из файлов
     void loadImages();
     // Метод проверяет столкновения змеи с другими объектами
-    void checkCollisions();
+    void checkCollision();
     // Метод проверяет столкновение указанной точки со змеей
     bool collideWithSnake(int x, int y);
     // Метод запускающий игру
@@ -53,7 +53,7 @@ private:
     void move(int key);
 private slots:
     // Метод обработки события таймера
-    void on_timeout();
+    void timerEvent();
 protected:
     // Метод обработки нажатия клавиши на клавиатуре
     void keyPressEvent(QKeyEvent *e);
