@@ -26,7 +26,7 @@ Window::Window(QWidget *parent) : QWidget(parent)
     this->resize(520, 520);
     // Запускаем таймер
     this->timer = new QTimer(this);
-    // и привязываем обработчик таймера "on_timeout"
+    // и привязываем обработчик таймера "timerEvent"
     // в нем происходит основной цикл игры: перемещение змеи,
     // проверка коллизий и перерисовка поля
     connect(timer, SIGNAL(timeout()), this, SLOT(timerEvent()));
