@@ -25,7 +25,7 @@ private:
     QPixmap snake_head_right;
     // Голова змеи направленная вниз
     QPixmap snake_head_down;
-    // Голова змеи направленная ввер
+    // Голова змеи направленная вверх
     QPixmap snake_head_up;
     // Координаты яблока (x,y)
     pair<int,int> applePos;
