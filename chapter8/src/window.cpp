@@ -20,8 +20,6 @@ enum Directions { UP, DOWN, LEFT, RIGHT };
 
 Window::Window(QWidget *parent) : QWidget(parent)
 {    
-    // Изначально змея движется вправо
-    this->direction = Directions::RIGHT;
     // Изначальный размер окна
     this->resize(520, 520);
     // Запускаем таймер
@@ -57,6 +55,8 @@ void Window::loadImages()
 
 /// @brief Старт игры
 void Window::initGame() {
+    // Изначально змея движется вправо
+    this->direction = Directions::RIGHT;
     // Размещаем яблоко
     this->locateApple();
     // Получаем произвольную позицию головы змеи
