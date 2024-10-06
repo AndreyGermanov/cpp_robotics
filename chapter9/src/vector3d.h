@@ -69,7 +69,7 @@ class Vector3D {
 
 /// @brief Оператор печати вектора в поток вывода
 /// @param os Ссылка на поток вывода
-/// @param vec ССылка на вектор
+/// @param vec Ссылка на вектор
 /// @return Поток вывода
 ostream& operator<<(ostream &os, const Vector3D &vec) {
     os << vec[0] << "," << vec[1] << "," << vec[2];
