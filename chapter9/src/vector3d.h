@@ -79,11 +79,11 @@ ostream& operator<<(ostream &os, const Vector3D &vec) {
 /// @brief Функция нормализвации вектора
 /// @param vec Умный указатель на вектор
 void normalize_vector(shared_ptr<Vector3D> vec) {
-    double len = 0;
+    double sum = 0;
     // Вычисляем сумму элементов вектора
-    for (int idx=0;idx<3;++idx) { len += (*vec)[idx]; };
+    for (int idx=0;idx<3;++idx) { sum += (*vec)[idx]; };
     // Делим каждый элемент на сумму
-    for (int idx=0;idx<3;idx++) { (*vec)[idx] /= len; }
+    for (int idx=0;idx<3;idx++) { (*vec)[idx] /= sum; }
     // Ничего не возвращаем, так как входящий вектор модифицируется
     // по указателю
 }
