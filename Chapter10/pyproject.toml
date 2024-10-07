@@ -1,0 +1,8 @@
+# Этот файл устанавливает необходимые для сборки и установки пакеты Python, 
+# включая PyBind11 и Setuptools
+[build-system]
+requires = [
+    "setuptools",
+    "pybind11",
+]
+build-backend = "setuptools.build_meta"
